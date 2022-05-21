@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>My Cool App</title>
+  <meta name="description" content="My App">
+  <meta name="author" content="Daniel Koenigsperger">
+  <script type="text/javascript" src="/static/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+  
+  <div class=mainContainer>
+
+    <div class="tabs">
+      <div id="dailyTodo" onclick="switchTabs(this.id)" class="tab dailyTodo"> Daily Todo</div><div id="finance" onclick="switchTabs(this.id)" class="tab finances">Finances</div><div id="calendar" onclick="switchTabs(this.id)" class="tab calendar">Calendar</div><div id="monthlyPayments" onclick="switchTabs(this.id)" class="tab monthlyPayments">Monthly Payments</div><div id="friendsNetworking" onclick="switchTabs(this.id)" class="tab friendsNetworking">Friends & Networking</div><div id="overallTodo" onclick="switchTabs(this.id)" class="tab overallTodo">Overall Todo</div>
+    </div>
+    
+    <div id="currentTab">
+      
+    </div>
+
+    <script src="/static/script.js"></script>
+    
+
+    <div class="content">
+      <!-- Various tab content goes here-->
+    </div>
+
+  </div>
+  
+  
+
+
+  <!-- <form id="submitForm" action="/runSelenium/username/password/date" method="post">
+    <input type="text" id="username" value=""><br>
+    <input type="text" id="password" value=""><br>
+    <input type="text" id="date" value=""><br>
+    <button type="button" onclick="submitForm()">Run Selenium</button>
+  </form> -->
+
+</body>
+</html>

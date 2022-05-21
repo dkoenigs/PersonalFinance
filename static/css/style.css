@@ -1,0 +1,284 @@
+.mainContainer {
+    height: 600px;
+    width: 800px;
+    display: inline-block;
+}
+
+.tabs {
+   height: 40px;
+   width: 800px;
+}
+
+.tab {
+    height: 40px;
+    width: 133px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tab:hover {
+    background-color: #111;
+}
+
+.content {
+    height: 560px;
+    width: 800px;
+    background-color: rgb(127, 193, 255);
+    color: black;
+}
+/* ----------------------------------------------- Overall Todo Tab */
+.overallTodoItemsTitle {
+    padding-top: 10px;
+    padding-left: 200px;
+}
+.overallTodoItems {
+    width: 500px;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    display: inline-block;
+    border: 2px solid black;
+}
+.overallTodoAdd {
+    margin-left: 150px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+/* ----------------------------------------------- Daily Todo Tab */
+.dailyTodoItems {
+    width: 500px;
+    height: 560px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.dailyTodoAdd {
+    width: 250px;
+    height: 215px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.selectBox {
+    font-size: large;
+}
+
+#dailyTodoInput {
+    height: 30px;
+    width: 200px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#dailyTodoButton {
+    height: 33px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.dailyTodoItemsTitleMorning {
+    padding-top: 5px;
+    padding-left: 110px;
+}
+.dailyTodoItemsMorning {
+    padding-top: 5px;
+    padding-left: 20px;
+    height: 150px;
+    width: 300px;
+    border: 2px solid black;
+    overflow: scroll;
+}
+
+.dailyTodoItemsTitleDay {
+    padding-top: 5px;
+    padding-left: 210px;
+}
+.dailyTodoItemsDay {
+    padding-top: 5px;
+    padding-left: 20px;
+    margin-left: 80px;
+    height: 150px;
+    width: 300px;
+    border: 2px solid black;
+    overflow: scroll;
+}
+
+.dailyTodoItemsTitleEvening {
+    padding-top: 5px;
+    padding-left: 280px;
+}
+.dailyTodoItemsEvening {
+    padding-top: 5px;
+    padding-left: 20px;
+    margin-left: 160px;
+    height: 150px;
+    width: 300px;
+    border: 2px solid black;
+    overflow: scroll;
+}
+
+.moveButtons {
+    padding-top: 10px;
+    background-color: transparent;
+    border: none;
+    
+}
+
+.moveButtons img{
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.completeTodoButton img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.deleteTodoButton img{
+    background-color: rgb(180, 85, 85);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.todoDivider {
+    border-bottom: 2px solid black;
+    width: 280px;
+}
+
+/* ----------------------------------------------- Finance Tab */
+
+/* Overall Arrangement */
+.leftFinance {
+    width: 558px;
+    height: 560px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.rightFinance {
+    width: 240px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.financeIncome, .financeFixedCosts, .financeSavings, .financeInfo {
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    padding: 12px;
+    overflow: scroll;
+}
+
+/*---- #1 ---- Income*/
+.financeIncome {
+    border: 2px solid black;
+}
+
+#incomeInfo, #incomeAmount, #incomeButton, #incomeTax {
+    background-color:rgb(127, 193, 255);
+    width: 60px;
+}
+
+#financeIncomeAdd {
+    display: flex;
+}
+
+/*---- #2 ---- FixedCosts*/
+.financeFixedCosts {
+    border: 2px solid black;
+}
+#financeFixedCostsAdd {
+    display: inline;
+}
+#fixedCostsInfo, #fixedCostsAmount, #fixedCostsButton {
+    background-color:rgb(127, 193, 255);
+    width: 60px;
+}
+
+/*---- #3 ---- Savings*/
+.financeSavings {
+    border: 2px solid black;
+}
+#financeSavingsAdd {
+    display: inline;
+}
+#savingsInfo, #savingsAmount, #savingsButton, #savingsPercent {
+    background-color:rgb(127, 193, 255);
+    width: 60px;
+}
+
+/*---- #4 ---- Info*/
+.financeInfo {
+    border: 2px solid black;
+}
+#financeAvailableBalance {
+    font-weight: bolder;
+}
+
+/*---- #5 ---- Spending*/
+.financeSpending {
+    border: 2px solid black;
+    width: 237px;
+    height: 555px;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+#financeSpendingAdd {
+    display: inline;
+}
+
+#financeSpendingItems {
+    font-size:medium;
+    padding: 0;
+    margin: 0;
+    padding-left: 2px;
+}
+
+#financeSpendingIndividualItem {
+    overflow: scroll;
+    font-size: small;
+    width: 200px;
+    height: 15px;
+    border: 0.5px solid black;
+}
+
+#spendingInfo, #spendingAmount, #spendingButton {
+    background-color:rgb(127, 193, 255);
+    width: 60px;
+}
+
+
